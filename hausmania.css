@@ -43,7 +43,7 @@ body {
       margin-top: 100px;
     }}
   header {
-    background-color: #EED031;
+    background-color: #a9a8a8;
     color: #020202;
     height: 100px;
     display: flex;
@@ -172,7 +172,7 @@ body {
         position: absolute;
         top: 100px;
         left: 0px;
-        background-color: #EED031;
+        background-color: #a9a8a8;
         margin: 0;
         padding: 0;
         
@@ -596,7 +596,7 @@ body {
   
   footer .main_footer {
     margin-top: 50px;
-    background: #EED031;
+    background: #a9a8a8;
     padding-top: 30px;
     padding-bottom: 10px;
     color: #444444; /* add a darker font color */
@@ -1465,14 +1465,14 @@ body {
   font-style: italic;
   }
   #hero-slides #header #logo:before {
-  content: "Folk og røvere";
+  content: "MINE";
   text-transform: uppercase;
   font-weight: 100;
   margin-right: 0.4em;
   white-space: nowrap;
   }
   #hero-slides #header #logo:after {
-  content: "på Hausmania";
+  content: "PROSJEKTER";
   text-transform: uppercase;
   font-weight: 800;
   white-space: nowrap;
@@ -2695,7 +2695,7 @@ body {
       left:40px;
       bottom:100px;
       z-index:-1;
-      border:2px solid #EED031;
+      border:2px solid #a9a8a8;
   }.about-section .image-column .inner-column .image {
     position: relative;
     overflow: hidden; /* Hide overflowing corners */
@@ -2732,7 +2732,7 @@ body {
       top:0px;
       width:110px;
       height:110px;
-      color:#EED031;
+      color:#a9a8a8;
       font-size:68px;
       font-weight:700;
       line-height:105px;
@@ -2827,7 +2827,7 @@ body {
   }
   .sec-title .title {
       position: relative;
-      color: #EED031;
+      color: #a9a8a8;
       font-size: 18px;
       font-weight: 700;
       padding-right: 50px;
