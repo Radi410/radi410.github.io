@@ -267,7 +267,7 @@ body {
     background-image: linear-gradient(to top, rgba(187, 180, 138, 1), rgba(187, 180, 138, 0)), url(portfolioheader.jpg);
     background-position: center center;
     background-size: cover;
-    height: 400px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
