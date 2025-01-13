@@ -43,7 +43,7 @@ body {
       margin-top: 100px;
     }}
   header {
-    background-color: #bbb48a;
+    background-color: #222;
     color: #020202;
     height: 100px;
     display: flex;
@@ -94,7 +94,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-left: 600px;
+    margin-left: 200px;
     margin-right: auto;
     position: relative;
     z-index: 100;
@@ -605,9 +605,9 @@ body {
   
   footer .main_footer {
     margin-top: 50px;
-    background: #bbb48a;
+    background: #222;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     color: #444444; /* add a darker font color */
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); /* add a text-shadow */
     
@@ -779,17 +779,17 @@ body {
   
   
   .icon {
-    padding: 10px 5px;
+    padding: 3px 5px;
     width: 70px;
     height: 50px;
     
   }
   .inner ul {
     position:absolute;
-    top:60%;
+    top:0px;
     left:118%;
     transform:translate(-50%,-50%);
-    margin:50px 10px;
+    margin:0px 10px;
     padding:0px;
     display:flex;
   }
@@ -802,11 +802,11 @@ body {
     width:50px;
     height:50px;
     line-height:80px;
-    font-size:40px;
+    font-size:30px;
     text-align:center;
     text-decoration:none;
     color:#ffffff;
-    margin: 0 30px;
+    margin: 0 50px;
     transition:.5s;
   }
   .inner ul li a span {
@@ -1442,7 +1442,7 @@ body {
   --page: 0;
   height: 70vh;
   background: #f6faff;
-  background: linear-gradient(90deg, #bbb48a 0%, #ffffff 100%);
+  background: linear-gradient(90deg, #222 0%, #ffffff 100%);
   }
   #hero-slides #header {
   height: 12vh;
@@ -1460,13 +1460,14 @@ body {
   font-weight: 100;
   margin-right: 0.4em;
   white-space: nowrap;
+  color: white;
   }
   #hero-slides #header #logo:after {
   content: "PROSJEKTER";
   text-transform: uppercase;
   font-weight: 800;
   white-space: nowrap;
-  
+  color:white;
   }
   #hero-slides #header #menu {
   position: absolute;
@@ -1501,7 +1502,7 @@ body {
   #hero-slides #slides-cont .button {
   width: 5vw;
   height: var(--button-height);
-  background: #bbb48a;
+  background: #ffffff;
   position: absolute;
   right: 5.375vw;
   top: 38vh;
