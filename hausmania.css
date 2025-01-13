@@ -43,7 +43,7 @@ body {
       margin-top: 100px;
     }}
   header {
-    background-color: #a9a8a8;
+    background-color: #bbb48a;
     color: #020202;
     height: 100px;
     display: flex;
@@ -62,18 +62,16 @@ body {
   }
   
   .logo {
-    
-   
     flex: 0 1 auto; 
     position: absolute;
     left: 0px;
     top: 5px;
     
-    background-color: rgba(245, 241, 12, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
   }
   .logo img {
     
-    width: 550px; height: 80px;
+    width: 450px; height: 100px;
     
   }
   @media screen and (max-width: 768px) {
@@ -114,7 +112,7 @@ body {
   
   nav ul li a {
     font-family: 'Lato', sans-serif;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -221,6 +219,7 @@ body {
   
   nav ul li a:hover {
     text-decoration: none;
+    color: black;
   }
   
   nav ul li a:hover::after {
@@ -230,7 +229,7 @@ body {
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     animation: underline 0.2s ease-in-out forwards;
   }
   
@@ -260,21 +259,26 @@ body {
   }
   s
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: #ffffff;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
   .hero {
-    background-image: url(Hausmania4.jpg);
+    background-image: linear-gradient(to top, rgba(187, 180, 138, 1), rgba(187, 180, 138, 0)), url(portfolioheader.jpg);
     background-position: center center;
     background-size: cover;
-    height: 600px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    background-color: rgba(0, 0, 0, 0.3);
+    
+   
     position: relative;
+    border-top: 2px solid transparent; /* Optional */
+    margin-top: -2px; /* Slight overlap with navbar */
+  }
+  .hero h4 {
+    color:white;
   }
   
   .scroll-down-arrow {
@@ -596,7 +600,7 @@ body {
   
   footer .main_footer {
     margin-top: 50px;
-    background: #a9a8a8;
+    background: #bbb48a;
     padding-top: 30px;
     padding-bottom: 10px;
     color: #444444; /* add a darker font color */
@@ -608,6 +612,7 @@ body {
   
   footer .sec_01 figure {
     margin: 10px;
+    margin-left:-70px;
   }
   
   footer .sec_01 .ftr_logo {
@@ -623,8 +628,8 @@ body {
   }
   
   .footer .sec_01 .ftr_desc {
-    font-size: 20px;
-    color: #000000;
+    font-size: 40px;
+    color: #ffffff;
     line-height: 1.8;
     margin-bottom: 170px;
     /* You can adjust the margins here */
@@ -767,26 +772,6 @@ body {
     text-decoration: underline;
   }
   
-  footer .sec_03 form button {
-    position: relative;
-    
-    
-    background-image: url(sendknapp_54x54.png);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    border: 0px;
-    right: 60px;
-    top:-4.5px;
-    color: #232323;
-    font-size: 20px;
-    
-  }
-  
-  
-  
-    
-  
   
   .icon {
     padding: 10px 5px;
@@ -815,7 +800,7 @@ body {
     font-size:40px;
     text-align:center;
     text-decoration:none;
-    color:#404040;
+    color:#ffffff;
     margin: 0 30px;
     transition:.5s;
   }
@@ -827,7 +812,7 @@ body {
   .inner ul li a span:nth-child(3){
     width:100%;
     height:3px;
-    background:#404040;
+    background:#ffffff;
   }
   .inner ul li a span:nth-child(1) {
     top:15px;
