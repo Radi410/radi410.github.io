@@ -52,6 +52,7 @@ body {
     justify-content: space-between;
   }
   
+  
   .header-container {
     max-width: 1500px;
     margin: 0 auto;
@@ -264,18 +265,22 @@ body {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
   .hero {
-    background-image: linear-gradient(to top, rgba(187, 180, 138, 1), rgba(187, 180, 138, 0)), url(portfolioheader.jpg);
+    background-image: 
+      linear-gradient(
+        to top, 
+        rgba(86, 86, 86, 0.5), /* Transparent grey */
+        rgba(109, 109, 109, 0.5)
+      ), 
+      url(portfolioheader.jpg);
     background-position: center center;
     background-size: cover;
     height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-   
     position: relative;
-    border-top: 2px solid transparent; /* Optional */
-    margin-top: -2px; /* Slight overlap with navbar */
+    
+    
   }
   .hero h4 {
     color:white;
