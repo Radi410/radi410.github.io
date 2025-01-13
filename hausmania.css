@@ -1152,7 +1152,7 @@ body {
     content: "";
     position: absolute;
     height: 5px;
-    background: #2af964;
+    background: #ba2215;
     width: 35px;
     top: -0.75rem;
     border-radius: 3px;
@@ -1452,7 +1452,7 @@ body {
   --page: 0;
   height: 70vh;
   background: #f6faff;
-  background: linear-gradient(90deg, #ffe346 0%, #ffffff 100%);
+  background: linear-gradient(90deg, #bbb48a 0%, #ffffff 100%);
   }
   #hero-slides #header {
   height: 12vh;
@@ -1511,7 +1511,7 @@ body {
   #hero-slides #slides-cont .button {
   width: 5vw;
   height: var(--button-height);
-  background: #ffe346;
+  background: #bbb48a;
   position: absolute;
   right: 5.375vw;
   top: 38vh;
