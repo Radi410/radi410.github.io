@@ -106,6 +106,7 @@ body {
   nav ul li {
     margin: 30px 50px;
     position: relative;
+    right: 200px;
     display: flex;
       list-style-type: none; /* Fjerner punktmerker */
       padding: 0; /* Fjerner standard padding */
