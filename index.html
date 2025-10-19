@@ -1,855 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hausmania</title>
-    <link rel="stylesheet" href="hausmania.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="bloggen.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <title>Radi Halabi – IT-konsulent & Utvikler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  </head>
-  <body>
-    <header>
-      
-      <div class="header-container">
-       <!-- <a href="#" class="logo"><img src=""style="" class="big-logo"> </a>-->
-        
-        <nav>
-          <ul>
-            <li><a href="#Events" class="scroll">Om meg</a></li>
-            <li><a href="#Artist" class="scroll">Mine prosjekter</a></li>
-            <li><a href="#Blog" class="scroll">Tidsreise</a></li>
-            <li><a href="#Lokaler" class="scroll">Pågående prosjekter</a></li>
-           
-            
-          </ul>
-          <div class="menu-icon" onclick="myFunction()">
-            <div id="dropdown-content" class="dropdown-content">
-              <li><a href="#Events" class="scroll">Om meg</a></li>
-              <li><a href="#Artist" class="scroll">Mine prosjekter</a></li>
-              <li><a href="#Blog" class="scroll">Tidsreise</a></li>
-              <li><a href="#Lokaler" class="scroll">Pågående prosjekter</a></li>
-            
-              
-            </div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </nav>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AnimeJS -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    /* Make sure sections are visible for scroll-triggered anims */
+    section { opacity: 0; transform: translateY(40px); }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- HERO / HEADER -->
+  <header id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 to-purple-700 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 id="hero-title" class="text-5xl md:text-7xl font-bold mb-4">Hei, jeg er Radi Halabi</h1>
+      <p id="hero-sub" class="text-xl md:text-2xl opacity-90 mb-8">IT-konsulent | Full-stack-utvikler | Radio Nova IT-sjef</p>
+      <div id="hero-links" class="flex gap-4 justify-center">
+        <a href="#prosjekter" class="px-5 py-3 rounded-full bg-white text-indigo-700 font-semibold hover:bg-slate-100 transition">Se prosjekter</a>
+        <a href="CV_Radi_Halabi.docx.pdf" target="_blank" class="px-5 py-3 rounded-full ring-2 ring-white text-white font-semibold hover:bg-white/10 transition">Last ned CV</a>
       </div>
-    
-      </header>
-    <section class="hero hero-shadow">
-      <a href="#events" class="scroll-down-arrow"></a>
-        <div class="hero-content">
-          <h1>HEI VELKOMMEN TIL MIN PORTFOLIO</h1>
-          <h4>UTIVKLER MED EN BACHELOR I INFORMATIKK, SPESIALISERT I PROGRAMMERING OG SYSTEMARKITEKTUR. </h4>
-        </div>
-      </section>
-      
-      
-        <section class="about-section">
-          <div class="container">
-              <div class="row clearfix">
-                  
-                    <!--Content Column-->
-                    <div class="content-column col-md-6 col-sm-12 col-xs-12">
-                      <div class="inner-column">
-                          <div class="sec-title">
-                            <div class="title">OM MEG</div>
-                              <h2 >RADI<br> HALABI</h2>
-                            </div>
-                            <div class="text">Jeg er en engasjert og løsningsorientert person som brenner for teknologi, samarbeid og nyskaping. Jeg kombinerer kreativitet og struktur for å utvikle løsninger som forener funksjonalitet, brukervennlighet og teknisk presisjon.
-
-                              <p class="hide-on-small"><br> </br>For meg er det viktig å være empatisk og nysgjerrig person som trives i miljøer hvor idéer deles og samarbeid står i fokus. Med et skarpt øye for detaljer og en sterk interesse for å forstå komplekse systemer, jobber jeg målrettet for å skape løsninger som både inspirerer og bidrar til positiv endring.</p></div>
-                            <div class="email">Besøke min Github?  <span class="theme_color"> </span></div>
-                      
-                            <div class="buttonContainer">
-                              <a class="buttonas" href="https://github.com/Radi410" title="Show more" target="_blank"><span>Klikk her</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--Image Column-->
-                    <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                      <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="blog-card2">
-                          <div class="image">
-                              <img src="radiport.png" alt="">
-                                
-                            
-                            
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-      
-      <section id="Artist">
-        <a href="#Artist" class="scroll-down-arrow"></a>
-        <div id="hero-slides">
-          
-        
-          <div id="header">
-            <div id="logo"></div>
-            <div id="menu">
-              <div id="hamburger">
-                <div class="slice"></div>
-                <div class="slice"></div>
-                <div class="slice"></div>
-              </div>
-            </div>
-          </div>
-          <div id="slides-cont">
-            <div class="button" id="next"></div>
-            <div class="button" id="prev"></div>
-            <div id="slides">
-              <div class="slide" style="background-image: url(.jpg)">
-                <div class="number">01</div>
-                <div class="body">
-                  <div class="location">GruppeProsjekt i kotlin. En Værapp for yngre. </div>
-                  <div class="headline">VÆR APP</div><a href="https://github.com/Radi410/V-rapp" target="_blank">
-                    <div class="link">Klikk her!</div></a>
-                </div>
-              </div>
-              <div class="slide" style="background-image: url(harald-lange.jpg)">
-                <div class="number">02</div>
-                <div class="body">
-                  <div class="location">Første Kotlin app, gir en oversikt hvilken Lamaer ble stemt på mest i en besemte distrikter</div>
-                  <div class="headline">LAMA POOLS</div>
-                    <a href="https://github.com/Radi410/Voting-Lamas-Politics" target="_blank">
-                      <div class="link"> Klikk her!</div></a>
-                </div>
-              </div>
-              <div class="slide" style="background-image: url(a_se_karlsen.jpg)">
-                <div class="number">03</div>
-                <div class="body">
-                  <div class="location">En habit tracker app, fokusert på mental helse og belønne brukere laget med React Native (Pågående)</div>
-                  <div class="headline">HabitTracker</div><a href="" target="_blank">
-                    </a>
-                </div>
-              </div>
-              <div class="slide" style="background-image: url(martin-aakervik.jpg)">
-                <div class="number">04</div>
-                <div class="body">
-                  <div class="location">Bruk av Java GUI  </div>
-                  <div class="headline">SLANGESPILL</div><a href="https://github.com/Radi410/IT---Software-engineering/tree/main/GUISlangespillJava" target="_blank">
-                    <div class="link">Klikk her!</div></a>
-                </div>
-              </div>
-              <div class="slide" style="background-image: url(3D-art.jpg)">
-                <div class="number">05</div>
-                <div class="body">
-                  <div class="location"> Øving på objektorientering og klasser med Java. </div>
-                  <div class="headline">LEGESYSTEM</div><a href="https://github.com/Radi410/IT---Software-engineering/tree/main/LegesystemSTORjs" target="_blank">
-                    <div class="link"> Klikk her!</div></a>
-                </div>
-              </div>
-              <div class="slide" style="background-image: url(Freaky-Oscar-_-the-FarSounds-at-Molla.jpg)">
-                <div class="number">06</div>
-                <div class="body">
-                  <div class="location">Java scanner</div>
-                  <div class="headline">FINN LABORYNT LØSNING</div><a href="https://github.com/Radi410/IT---Software-engineering/blob/main/FinnRaskestveiLaboryntJS/" target="_blank">
-                    <div class="link">Klikk her!</div></a>
-                </div>
-              </div>
-              <div class="slide" style="background-image: url(Dromedar.jpg)">
-                <div class="number">07</div>
-                <div class="body">
-                  <div class="location">Min første Utviklet og designet brukervennlig nettside for å fremvise artister, arrangementer og artikler i kulturhuset
-                   
-                    </div>
-                  <div class="headline">HAUSMANIA WEBSIDE</div><a href="https://github.com/Radi410/" target="_blank">
-                    <div class="link">Klikk her!</div></a>
-                </div>
-              </div>
-            </div>
-            <div id="next-catch"></div>
-            <div id="prev-catch"></div>
-          </div>
-          <div id="footer"><a href="https://dribbble.com/shots/3888265-Motion-Study" target="_blank">
-              <div id="dribbble"></div></a></div>
-        </div>
-  
-      </section>
-      <br>
-      
-      
-        
-        <section class="cd-horizontal-timeline" id="Blog">
-          <h2 class="projecth2" style="text-align: center;">Tidslinje - Min Reise for å Bli Programvareutvikler</h2>
-          <div class="timeline">
-              <div class="events-wrapper">
-                  <div class="events">
-                      <ol>
-                          <li><a href="#0" data-date="16/01/2014" class="selected">Aug 2020</a></li>
-                          <li><a href="#0" data-date="28/02/2014">Jun 2022</a></li>
-                          <li><a href="#0" data-date="20/04/2014">Aug 2023</a></li>
-                          <li><a href="#0" data-date="20/05/2014">Jan 2024</a></li>
-                          <li><a href="#0" data-date="09/07/2014">Mai 2024</a></li>
-                          <li><a href="#0" data-date="30/08/2014">Aug 2024</a></li>
-                          <li><a href="#0" data-date="15/09/2014">Nov 2024</a></li>
-                          <li><a href="#0" data-date="01/11/2014">Jan 2025</a></li>
-                          <li><a href="#0" data-date="10/12/2014">Feb 2025</a></li>
-                          <li><a href="#0" data-date="19/01/2015">Mai 2025</a></li>
-                          <li><a href="#0" data-date="03/03/2015">Jun 2025</a></li>
-                      </ol>
-      
-                      <span class="filling-line" aria-hidden="true"></span>
-                  </div> 
-              </div> 
-                  
-              <ul class="cd-timeline-navigation">
-                  <li><a href="#0" class="prev inactive">Prev</a></li>
-                  <li><a href="#0" class="next">Next</a></li>
-              </ul> 
-          </div> 
-      
-          <div class="events-content">
-            <!-- Left arrow button -->
-          
-            
-              <ol>
-                  <li class="selected" data-date="16/01/2014">
-                      
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="bachelorgrad.jpg" alt="Description">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h3>Starten – Begynner på Bachelorgraden</h3>
-                              <h4>Aug 2020</h4>
-                              <p>Jeg startet bachelorgraden i informatikk ved Universitetet i Oslo med store drømmer om å utforske teknologiens verden. De første fagene, som "Objektorientert Programmering," var utfordrende, men vekket min lidenskap for å skape løsninger fra bunnen av..
-                              </p>
-                              <button type="button" class="button btn-dark btn-lg btn-block" data-toggle="modal" data-target="#artikkel_en">
-                                Klikk her!
-                              </button>
-                              
-                             
-                            </div>
-                          </div>
-                        </div>
-                            
-                      
-                           
-                       
-                  </li>
-      
-                  <li data-date="28/02/2014">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="skolenJobb.jpg" alt="Description">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h3>-Første Praktiske Erfaring – IT-lærer på Kuben Videregående Skole</h3>
-                              <h4>Jun 2022</h4>
-                              <p> Min første praktiske erfaring fikk jeg som vikar i IT på Kuben Videregående. Her lærte jeg å formidle tekniske konsepter til elever på en enkel måte. Dette styrket ikke bare min forståelse av fagene, men også min evne til å kommunisere effektivt.
-                              </p>
-                              <button type="button" class="button btn-dark btn-lg btn-block" data-toggle="modal" data-target="#artikkel_to">
-                                  Les her!
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                            
-                  </li>
-      
-                  <li data-date="20/04/2014">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="serverromRadionova.jpg" alt="Description">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h3>Første Profesjonelle Rolle – IT-Driftstekniker hos Radio Nova</h3>
-                              <h4>Aug 2023</h4>
-                              <p>Å begynne som driftstekniker hos Radio Nova var en milepæl. Jeg jobbet med Linux-baserte servere, migrerte systemer til skyen ved hjelp av Azure, og lærte betydningen av skalerbarhet og driftssikkerhet. Dette var øyeblikket hvor jeg virkelig følte at jeg bidro i arbeidslivet.
-                              </p>
-                              <button type="button" class="button btn-dark btn-lg btn-block" data-toggle="modal" data-target="#artikkel_tre">
-                                  Les mer
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                            
-                  </li>
-      
-                  <li data-date="20/05/2014">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="app_prosjekt.png" alt="Description">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h3> Nye Utfordringer – Mitt Første App-prosjekt</h3>
-                              <h4>Januar 2024</h4>
-                              <p>Jeg startet på App-prosjektet, en app holder oversikt over stemmer og disktrikter som leder i votes. Dette prosjektet lærte meg mye om brukeropplevelse og databehandling i sanntid, samtidig som jeg fikk erfaring med både iOS- og Android-utvikling.
-                              </p>
-                              
-                            </div>
-                          </div>
-                        </div>
-                            
-                  </li>
-      
-                  <li data-date="09/07/2014">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="Downtime.jpeg" alt="Description">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h3>Bygger Motstandsdyktighet – Krisehåndtering og Automatisering</h3>
-                              <h4>Aug 2024</h4>
-                              <p>
-                                En av de mest intense periodene i min karriere var å håndtere serverkriser og automatisere oppgaver med Bash og Python. Det var stressende, men jeg lærte viktigheten av raske beslutninger og evnen til å tilpasse seg under press.
-
-                                  </p>
-                              
-                            </div>
-                          </div>
-                        </div>
-                            
-                  </li>
-      
-                  <li data-date="30/08/2014">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="radionova.jpg" alt="Description">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h3>Selvtilliten Vokser – Webplattform for Radio Nova</h3>
-                              <h4>Jan 2025</h4>
-                              <p>Som prosjektleder for utviklingen av Radio Novas nye webplattform opplevde jeg gleden av å skape en løsning for over 300 medlemmer. Jeg jobbet med databaser, containerisering med Docker, og skapte en brukervennlig og effektiv plattform.</p>
-                              <button type="button" class="button btn-dark btn-lg btn-block" data-toggle="modal" data-target="#artikkel_fem">
-                                  Les mer
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                            
-                  </li>
-      
-                  <li data-date="15/09/2014">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="radioport.png" alt="">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h3>Et Tilbakeblikk på Reisen</h3>
-                              <h4>Jan, 2025</h4>
-                              <p>Når jeg ser tilbake på reisen, innser jeg hvor mye jeg har vokst som utvikler. Fra mine første programmeringsoppgaver til å lede komplekse prosjekter, har hver erfaring bidratt til min utvikling. Jeg er stolt av hvor jeg er i dag og gleder meg til fremtidige utfordringer.
-
-
-                              </p>
-                              <button type="button" class="button btn-dark btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">
-                                  Les mer
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                            
-                  </li>
-      
-                  <li data-date="01/11/2014">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="radioport.png" alt="">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h2>Test</h2>
-                              <h3>January 16th, 2014</h3>
-                              <p>sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                              </p>
-                              <button type="button" class="button btn-dark btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">
-                                  Les mer
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                            
-                  </li>
-      
-                  <li data-date="10/12/2014">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="radioport.png" alt="Description">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h2>Test</h2>
-                              <h3>January 16th, 2014</h3>
-                              <p>sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                              </p>
-                              <button type="button" class="button btn-dark btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">
-                                  Les mer
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                            
-                  </li>
-      
-                  <li data-date="19/01/2015">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="radioport.png" alt="Description">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h2>Test</h2>
-                              <h3>January 16th, 2014</h3>
-                              <p>sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                              </p>
-                              <button type="button" class="button btn-dark btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">
-                                  Les mer
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                            
-                  </li>
-      
-                  <li data-date="03/03/2015">
-                      <div class="blog-slider">
-                          <div class="blog-slider__item">
-                            <!-- Place your image here -->
-                            <div class="blog-slider__img">
-                              <img src="radioport.png" alt="Description">
-                            </div>
-                        
-                            <!-- Place your text content here -->
-                            <div class="blog-slider__content">
-                              <h2>Test</h2>
-                              <h3>January 16th, 2014</h3>
-                              <p>sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                              </p>
-                              <button type="button" class="button btn-dark btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">
-                                  Les mer
-                                </button>
-                            </div>
-                          </div>
-                        </div>
-                            
-                      
-                  </li>
-              </ol>
-              
-          </div>
-          
-          
-    
-        
-           <!-- .events-content -->
-      </section>
-    
-      <!--<div class="paginationContainer">
-        <div class="customPagination">
-            <div class="counter"></div>
-            <button class="paginate left prev inactive"><i></i><i></i></button>
-            <button class="paginate right next"><i></i><i></i></button>
-        </div>
-         Other content of the container  </div>-->
-    
-  
-      
-      <section class="blog" id="Lokaler">
-        <div class="blog-body">
-        <a href="#Lokaler" class="scroll-down-arrow"></a>
-        
-        
-        <p></p><p></p>
-       
-          <h2 class="projecth2">Pågående Prosjekter </h2>
-        <div class="blog-card">
-          <div class="meta">
-              <div class="photo" style="background-image: url(app_prosjekt.png)"></div>
-              <ul class="details">
-                  <li class="author"><a href="#">Radi Halabi</a></li>
-                  <li class="tags">
-                      <ul>
-                          <li><a href="" target="_blank">https://github.com/Radi410</a></li>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"> </a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </div>
-          <div class="description">
-              <h1>HabitTracker </h1>
-              <h2>React Native / FireBase</h2>
-              <p>  HabitTracker: Utviklet en brukervennlig app for værstatistikk. Teknologier: Kotlin, Git og Andriodstudio Implementerte sikkerhet og universell utforming for optimal brukeropplevelse
-                <p></p> Gi tilbakemelding eller ideer her radi@radionova.no eller radi@radionova.no  </p>
-              <p class="read-more">
-                  <a href="" target="_blank">Se koden her</a>
-              </p>
-          </div>
-      </div>
-      <div class="blog-card alt">
-          <div class="meta">
-              <div class="photo" style="background-image: url(radionova.jpg)"></div>
-              <ul class="details">
-                  <li class="author"><a href="" target="_blank">Radi Halabi</a></li>
-                  <li class="tags">
-                      <ul>
-                          <li><a href="https://github.com/Radi410" target="_blank">https://github.com/Radi410</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </div>
-          <div class="description">
-              <h1>Radio Nova Nettside</h1>
-              <h2> Django, Wagtail, PostgreSQL, Docker, Git, Azure webhosting</h2>
-              <p>Utvikler en webplattform som integrerer nettsaker, radioprogrammer og medlemsfunksjoner.
-                  <p></p>Designet en Wagtail CMS-løsning for 300+ medlemmer, muliggjorde publisering av nettsaker og programinformasjon.  Optimaliserte databasen og brukte Docker for å sikre en effektiv og containerisert plattformdrift.              </p>
-              <p class="read-more">
-                  <a href="https://github.com/Radi410" target="_blank">Se koden</a>
-              </p>
-          </div>
-      </div>
-      
     </div>
-  
-      </section>
-      
-      
+  </header>
 
+  <!-- OM MEG -->
+  <section id="om" class="py-20">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl font-bold mb-4">Om meg</h2>
+        <p class="leading-relaxed">
+          Jeg er en IT-konsulent med bachelor i informatikk fra Universitetet i Oslo (2021-2024).  
+          Til daglig drifter jeg IT-miljøet til Radio Nova: Linux-servere, Azure-skyløsninger, databaser, nettverk og CI/CD.  
+          Jeg brenner for universell utforming, automatisering, sikkerhet og å lage skalerbare løsninger med moderne teknologi.
+        </p>
+        <p class="mt-4 leading-relaxed">
+          Tidligere har jeg undervist i programmering og systemutvikling på Kuben vgs, og jobbet med brukerstøtte i tre år – alt sammen verdifull erfaring som gjør meg til en løsningsorientert lagspiller.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <!-- Placeholder bilde – bytt ut src -->
+        <img src="radiPortfolio.png" alt="Radi Halabi" class="w-48 h-60 rounded-full object-cover shadow-lg" />
+      </div>
+    </div>
+  </section>
 
+  <!-- TEKNIKKER -->
+  <section id="teknologi" class="py-20 bg-slate-100">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center">Teknologier & ferdigheter</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="font-semibold text-lg mb-2">Programmering & rammeverk</h3>
+          <ul class="list-disc list-inside space-y-1 text-slate-700">
+            <li>Python, Django, Wagtail CMS</li>
+            <li>JavaScript, React, Tailwind CSS</li>
+            <li>Kotlin (Android/Jetpack Compose)</li>
+            <li>Go, Bash/PowerShell</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg mb-2">Drift & DevOps</h3>
+          <ul class="list-disc list-inside space-y-1 text-slate-700">
+            <li>Linux, Azure, Docker, GitLab CI/CD</li>
+            <li>PostgreSQL, Azure SQL, Prometheus/Grafana</li>
+            <li>Active Directory, nettverk, DNS, DHCP</li>
+            <li>Sikkerhet, overvåking, automatisering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
- 
-  <script>function myFunction() {
-    document.getElementById("dropdown-content").classList.toggle("show");
-  }
-  
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.menu-icon')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+  <!-- PROSJEKTER -->
+  <section id="prosjekter" class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10 text-center">Utvalgte prosjekter</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Card 1 -->
+        <article class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Ny nettplattform for Radio Nova</h3>
+          <p class="text-sm text-slate-500 mb-3">Django + Wagtail CMS • PostgreSQL • Docker • Azure</p>
+          <p class="text-slate-700">Fullstendig redesign og utvikling av radionova.no med fokus på universell utforming, medlemsinnlogging og publisering av artikler og programinformasjon.</p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">KPMG ServiceNow Hackathon</h3>
+          <p class="text-sm text-slate-500 mb-3">ServiceNow • JavaScript • OpenAI API</p>
+          <p class="text-slate-700">AI-drevet CRM-verktøy som automatisk tolker blodprøveresultater og visualiserer helsetrender for pasienter. Vant både «People’s Award» og 1. plass fra juryen.</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Værmelding App (Android)</h3>
+          <p class="text-sm text-slate-500 mb-3">Kotlin • Jetpack Compose • MET SOAP API</p>
+          <p class="text-slate-700">Brukervennlig værmeldingsapp med universell utforming og enkel navigasjon. Henter data fra Meteorologisk institutt via SOAP API.</p>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Hausmania.no</h3>
+          <p class="text-sm text-slate-500 mb-3">HTML • CSS • JavaScript • Figma</p>
+          <p class="text-slate-700">Utviklet nettside for kulturhuset Hausmania. Ansvar for UX og universell utforming, samt presentasjon av artister og nyhetssaker.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="py-20 bg-indigo-600 text-white">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Kontakt</h2>
+      <p class="mb-6">Har du en idé eller et prosjekt du vil diskutere? Send meg en e-post eller ta kontakt på LinkedIn.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="mailto:radi@radionova.no" class="px-6 py-3 rounded-full bg-white text-indigo-700 font-semibold hover:bg-slate-100 transition">radi@radionova.no</a>
+        <a href="https://www.linkedin.com/in/radi-halabi-4421011ba/" target="_blank" class="px-6 py-3 rounded-full ring-2 ring-white text-white font-semibold hover:bg-white/10 transition">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 text-center text-slate-500 text-sm">
+    © 2025 Radi Halabi – bygget med Tailwind CSS & AnimeJS
+  </footer>
+
+  <!-- AnimeJS scroll-animations -->
+  <script>
+    // Fade in hero elements sequentially
+    anime({
+      targets: '#hero-title',
+      translateY: [-60, 0],
+      opacity: [0, 1],
+      duration: 900,
+      easing: 'easeOutQuad'
+    });
+    anime({
+      targets: '#hero-sub',
+      translateY: [-40, 0],
+      opacity: [0, 1],
+      duration: 900,
+      delay: 200,
+      easing: 'easeOutQuad'
+    });
+    anime({
+      targets: '#hero-links',
+      translateY: [-40, 0],
+      opacity: [0, 1],
+      duration: 900,
+      delay: 400,
+      easing: 'easeOutQuad'
+    });
+
+    // Intersection-observer for sections
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          anime({
+            targets: entry.target,
+            translateY: [40, 0],
+            opacity: [0, 1],
+            duration: 700,
+            easing: 'easeOutQuad'
+          });
+          observer.unobserve(entry.target);
         }
-      }
-    }
-  }
-  const aboutBtn = document.querySelector('#about-btn');
+      });
+    }, { threshold: 0.25 });
 
-aboutBtn.addEventListener('click', () => {
-  const aboutSection = document.querySelector('#about');
-  aboutSection.scrollIntoView({ behavior: 'smooth' });
-});
-
-
+    sections.forEach(sec => observer.observe(sec));
   </script>
-  <script src="script.js"></script>
-  </body>
- 
-  <footer class ="col-12 row"><section class="container-fluid main_footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-5 col-xl-5 sec_01">
-          <div class="inner">
-            <figure>
-              <div class="ftr_logo"> </div>
-            </figure>
-
-            
-
-            <ul>
-              <li>
-                  <a class="facebook" href="https://www.facebook.com/radi.halabi">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      
-                      <svg class="icon facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                          <style>
-                            .icon.facebook {
-                              fill: #404040;
-                              transition: fill 0.5s;
-                              width: 35px;
-                              height: 35px;
-                            }
-                            .icon.facebook:hover {
-                              fill: #3b5998;
-                            }
-                          </style>
-                          <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-                        </svg>
-                  </a>
-                  
-              </li>
-              <li>
-                  <a class="twitter" href="#">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <svg class="icon twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <style>
-                            .icon.twitter {
-                              fill: #404040;
-                              transition: fill 0.5s;
-                              width: 35px;
-                              height: 35px;
-                            }
-                            .icon.twitter:hover {
-                              fill: #1da1f2;
-                            }
-                          </style>
-                          <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
-                        </svg>
-                  </a>
-              </li>
-              <li>
-                  <a class="instagram" href="https://www.instagram.com/flowjr02/">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <svg class="icon instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                          <style>
-                            .icon.instagram {
-                              fill: #404040;
-                              transition: fill 0.5s;
-                              width: 35px;
-                              height: 35px;
-                            }
-                            .icon.instagram:hover {
-                              fill: #c32aa3;
-                            }
-                          </style>
-                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-                        </svg>
-                  </a>
-              </li>
-              <li>
-                  <a class="google" href="#">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <svg class="icon youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                          <style>
-                            .icon.youtube {
-                              fill: #404040;
-                              transition: fill 0.5s;
-                              width: 35px;
-                              height: 35px;
-                            }
-                            .icon.youtube:hover {
-                              fill: #dd4b39;
-                            }
-                          </style>
-                          <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
-                       </svg>   
-                  </a>
-              </li>
-          </ul>
-          </figure>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-4 sec_02">
-          <div class="inner">
-            
-
-        <div class="col-12 col-md-12 col-lg-3 col-xl-3 sec_03">
-          <div class="inner">
-            <form>
-              
-                <i class="fas fa-arrow-right-long fa-fw"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="copyright_sec container-fluid">
-   
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p>
-            &copy; 2025 <a href="#">Radi Halabi</a>. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </div>
-  
-  </section>
-</footer>
-<div class="modal fade" id="artikkel_en" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">Starten på reisen</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Tekst og refleksjoner</p>
-        <p>Det var januar 2021 da jeg for alvor tok det første steget mot drømmen min om å bli en programvareutvikler. På Universitetet i Oslo oppdaget jeg raskt hvordan informatikk kombinerer logikk og kreativitet. Et av de første fagene mine, "Objektorientert programmering," føltes som å lære et nytt språk – utfordrende, men utrolig givende.</p>
-        <p>Jeg husker spesielt hvordan jeg sleit med min første oppgave i Java. Etter flere timer med feilsøking fikk jeg endelig koden til å fungere. Det øyeblikket gav meg en smakebit på hva problemløsning i teknologi handler om – utholdenhet og belønningen av å finne løsningen.</p>
-      </div>
-      <div class="modal-body">
-        <img style="width: 450px; height: 350px;" src="bachelorgrad.jpg" alt="Student coding in a library">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="artikkel_to" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">Lærer og elev samtidig</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>På Kuben Videregående fikk jeg for første gang stå på andre siden av klasserommet. Jeg underviste i alt fra grunnleggende algoritmer til moderne webteknologi. Dette tvang meg til å tenke på teknologi på en ny måte – hvordan formidle det komplekse på en enkel og inspirerende måte.</p>
-        <p>Å se elever knekke koden og utvikle egne prosjekter var en utrolig motiverende opplevelse, og det styrket også min egen forståelse av fagene jeg underviste i.</p>
-      </div>
-      <div class="modal-body">
-        <img style="width: 450px; height: 350px;" src="skolenJobb.jpg" alt="Teacher in a classroom">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="artikkel_tre" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">Fra teori til praksis</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Som IT-driftstekniker hos Radio Nova fikk jeg for første gang bruke teknologien jeg hadde studert i praksis. Fra å migrere CMS-systemer til skyen til å feilsøke servere, lærte jeg raskt hvordan teori blir til virkelige løsninger som påvirker andres arbeidshverdag.</p>
-        <p>En av de mest givende erfaringene var å containerisere nettsiden med Docker, noe som forbedret skalerbarheten og stabiliteten betraktelig. Dette var også starten på min lidenskap for DevOps.</p>
-      </div>
-      <div class="modal-body">
-        <img style="width: 450px; height: 350px;" src="Downtime.jpeg" alt="Server room and monitoring systems">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="artikkel_fire" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">Når ting går galt</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>En av de mest krevende, men også mest givende periodene i min karriere var da jeg måtte håndtere kritiske serverproblemer. Å feilsøke under press lærte meg hvor viktig det er å holde hodet kaldt.</p>
-        <p>Jeg implementerte automatiserte oppgaver med Bash og Python for å forhindre fremtidige problemer. Dette arbeidet ga meg en dypere forståelse av hvordan automatisering kan styrke IT-drift og forbedre stabiliteten i systemer.</p>
-      </div>
-      <div class="modal-body">
-        <img style="width: 450px; height: 350px;" src="Downtime.jpeg" alt="Developer troubleshooting server issues">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="artikkel_fem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">Teste</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <img style="width: 450px; height: 350px;" src="radioport.png" />
-      </div>
-      <div class="modal-body">
-        <p> Skrevet av Radi</p>
-        
-      </div>
-      
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="Om_oss" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel">Mer info</h2>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-body">
-        
-
-        
-      </div>
-      
-    </div>
-  </div>
-</div>
-
+</body>
 </html>
